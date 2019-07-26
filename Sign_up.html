@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+	<meta charset="utf-8">
+	<title>SIGN_UP Form</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+
+
+
+  <link rel="stylesheet" href="css/alamin.css">
+  <style type="text/css">
+  	h4 {
+	color: white;
+	}
+  </style>
+
+</head>
+<body> 
+
+
+
+
+
+
+	<form class="box" onsubmit = "return myfunction()" action="Validating.php" method="post">
+		<h1 class="textcolor">Registration Form</h1>
+		<input type="text" name="name" placeholder="Full Name" required="true">
+
+		<input type="text" name="address" placeholder="Address" required="true">
+		
+		<input type="text" name="user_name" placeholder="User Name" required="true">
+		<input type="password" name="password" placeholder="Enter your password " required="true">
+		<input type="password" name="Confirm_Password" placeholder="Re-Enter your password " required="true">
+
+
+
+
+
+
+		
+		
+
+		
+		
+		<input type="submit" name="Submit" value="Create Account" >
+		<a  type="home" class="nav-item nav-link active bg-white" href="index.html" style="color: white">Home</a>
+
+		
+	</form>
+
+
+
+
+
+	<script type="text/javascript">
+        function myfunction(){
+            var a=document.getElementById('password').value;
+            var b=document.getElementById('Confirm_Password').value;
+            if(a!=b)
+            {
+                document.getElementById('message').innerHTML="Incorrect password";
+                return false;
+            }
+        }
+	</script>
+
+</body>
+</html>
