@@ -8,6 +8,7 @@ session_start();
 
     if(isset($_GET['done']))
           {
+	    $ir=0;
             $id=$_GET['done'];
 
             $result=mysqli_query($con,"UPDATE accepted_service_info SET status='done' where service_id=$id");
